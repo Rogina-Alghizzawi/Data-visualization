@@ -20,3 +20,106 @@ While going through the Exploratory Data Analysis steps we were able to find out
 
 iii.	Deliverables
 The result we came out from our exploration of the data is that the elections did really effected the distribution of the vaccinations in the US states and that the states which voted for Biden had noticeably larger amount of vaccinations than the ones voted for Trump.
+
+
+	Column name	Description	Type
+1.		Date	Date data are reported on CDC COVID Data Tracker	Date time 
+2.		MMWR_Week	The week of the epidemiologic year as defined by the Morbidity and Mortality Weekly Report	Integer 
+3.		Location	Jurisdiction (State)
+	Object 
+4.		Distributed	Total number of delivered doses	Object 
+5.		Distributed_Janssen	Total number of J&J/Janssen doses delivered	Object
+6.		Distributed_Moderna	Total number of Moderna doses delivered	Object
+7.		Distributed_Pfizer	Total number of Pfizer-BioNTech doses delivered	Object
+8.		Distributed_Unk_Manuf	Total number of doses delivered from other manufacturers	Object 
+9.		Dist_Per_100K	Delivered doses per 100,000 census population
+	Object
+10.		Distributed_Per_100k_5Plus	Total number of doses delivered per 100,000 people ages 5+
+	Object
+11.		Distributed_Per_100k_12Plus	Total number of doses delivered per 100,000 people ages 12+	Object
+12.		Distributed_Per_100k_18Plus	Total number of doses delivered per 100,000 people ages 18+	Object
+13.		Distributed_Per_100k_65Plus	Total number of doses delivered per 100,000 people ages 65+	Object
+14.		Administered	Total number of administered doses based on the jurisdiction (state) where administered	Object
+15.		Administered_5Plus	Total number of doses administered to people ages 5+ based on the jurisdiction where administered	Object
+16.		Administered_12Plus	Total number of doses administered to people ages 12+ based on the jurisdiction where administered	Object
+17.		Administered_18Plus	Total number of doses administered to people ages 18+ based on the jurisdiction where administered	Object
+18.		Administered_65Plus	Total number of doses administered to people ages 65+ based on the jurisdiction where administered	Object
+19.		Administered_Janssen	Total number of J&J/Janssen doses administered	Object
+20.		Administered_Moderna	Total number of Moderna doses administered
+	Object
+21.		Administered_Pfizer	Total number of Pfizer-BioNTech doses administered
+	Object
+22.		Administered_Unk_Manuf	Total number of administered doses from other manufacturers	Object
+23.		Admin_Per_100K	Total number of doses administered per 100,000 census population based on the jurisdiction where recipient lives	Object
+24.		Admin_Per_100k_5Plus	Total number of doses administered per 100,000 people ages 5+	Object
+25.		Admin_Per_100k_12Plus	Total number of doses administered per 100,000 people ages 12+
+	Object
+26.		Admin_Per_100k_18Plus	Total number of doses administered per 100,000 people ages 18+	Object
+27.		Admin_Per_100k_65Plus	Total number of doses administered per 100,000 people ages 65+	Object 
+28.		Recip_Administered	Total number of doses administered based on the jurisdiction where recipient lives	Object
+29.		Administered_Dose1_Recip	Total number of people with at least one dose based on the jurisdiction where recipient lives	float64
+30.		Administered_Dose1_Pop_Pct	Percent of population with at least one dose based on the jurisdiction where recipient lives	Object
+31.		Administered_Dose1_Recip_5Plus	Total number of people ages 5+ with at least one dose based on the jurisdiction where recipient lives	float64
+32.		Administered_Dose1_Recip_5PlusPop_Pct	Percent of population ages 5+ with at least one dose based on the jurisdiction where recipient lives	Object
+33.		Administered_Dose1_Recip_12Plus	Total number of people ages 12+ with at least one dose based on the jurisdiction where recipient lives	float64
+34.		Administered_Dose1_Recip_12PlusPop_Pct	Percent of population ages 12+ with at least one dose based on the jurisdiction where recipient lives	Object
+35.		Administered_Dose1_Recip_18Plus	Total number of people ages 18+ with at least one dose based on the jurisdiction where recipient lives	float64
+36.		Administered_Dose1_Recip_18PlusPop_Pct	Percent of population ages 18+ with at least one dose based on the jurisdiction where recipient lives
+	Object
+37.		Administered_Dose1_Recip_65Plus	Total number of people ages 65+ with at least one dose based on the jurisdiction where recipient lives	float64
+38.		Administered_Dose1_Recip_65PlusPop_Pct	Percent of population ages 65+ with at least one dose based on the jurisdiction where recipient lives	Object
+39.		Series_Complete_Yes	Total number of people who are fully vaccinated (have second dose of a two-dose vaccine or one dose of a single-dose vaccine) based on the jurisdiction where recipient lives	float64
+40.		Series_Complete_Pop_Pct	Percent of people who are fully vaccinated (have second dose of a two-dose vaccine or one dose of a single-dose vaccine) based on the jurisdiction where recipient lives	Object
+41.		Series_Complete_5Plus	Total number of people ages 5+ who are fully vaccinated (have second dose of a two-dose vaccine or one dose of a single-dose vaccine) based on the jurisdiction where recipient 
+lives	Object
+42.		Series_Complete_5PlusPop_Pct	Percent of people ages 5+ who are fully vaccinated (have second dose of a two-dose vaccine or one dose of a single-dose vaccine) based on the jurisdiction where recipient lives	float64
+43.		Series_Complete_12Plus	Total number of people ages 12+ who are fully vaccinated (have second dose of a two-dose vaccine or one dose of a single-dose vaccine) based on the jurisdiction where recipient lives	Object
+44.		Series_Complete_12PlusPop_Pct	Percent of people ages 12+ who are fully vaccinated (have second dose of a two-dose vaccine or one dose of a single-dose vaccine) based on the jurisdiction where recipient lives	float64
+45.		Series_Complete_18Plus	Total number of people ages 18+ who are fully vaccinated (have second dose of a two-dose vaccine or one dose of a single-dose vaccine) based on the jurisdiction where recipient lives	Object
+46.		Series_Complete_18PlusPop_Pct	Percent of people 18+ who are fully vaccinated (have second dose of a two-dose vaccine or one dose of a single-dose vaccine) based on the jurisdiction where recipient lives	float64
+47.		Series_Complete_65Plus	Total number of people ages 65+ who are fully vaccinated (have second dose of a two-dose vaccine or one dose of a single-dose vaccine) based on the jurisdiction where recipient lives	Object
+48.		Series_Complete_65PlusPop_Pct	Percent of people ages 65+ who are fully vaccinated (have second dose of a two-dose vaccine or one dose of a single-dose vaccine) based on the jurisdiction where recipient lives	float64
+49.		Series_Complete_Janssen	Total number of people who are fully vaccinated (completed primary series) with the J&J/Janssen vaccine based on the jurisdiction where recipient lives	Object
+50.		Series_Complete_Moderna	Total number of people who are fully vaccinated (completed primary series) with the Moderna vaccine based on the jurisdiction where recipient lives	Object
+51.		Series_Complete_Pfizer	Total number of people who are fully vaccinated (completed primary series) with the Pfizer vaccine based on the jurisdiction where recipient lives	Object
+52.		Series_Complete_Unk_Manuf	Total number of people who are fully vaccinated (completed primary series) with two doses from an unknown two-dose vaccine manufacturer based on the jurisdiction where recipient lives	Object
+53.		Series_Complete_Janssen_5Plus	Total number of people ages 5+ who are fully vaccinated (completed primary series) with the J&J/Janssen vaccine based on the jurisdiction where recipient lives	Object
+54.		Series_Complete_Moderna_5Plus	Total number of people ages 5+ who are fully vaccinated (completed primary series) with the Moderna vaccine based on the jurisdiction where recipient lives	Object
+55.		Series_Complete_Pfizer_5Plus	Total number of people ages 5+ who are fully vaccinated (completed primary series) with the Pfizer vaccine based on the jurisdiction where recipient lives	Object
+56.		Series_Complete_Unk_Manuf_5Plus	Total number of people ages 5+ who are fully vaccinated (completed primary series) with two doses from an uknown two-dose vaccine manufacturer based on the jurisdiction where recipient lives	Object
+57.		Series_Complete_Janssen_12Plus	Total number of people ages 12+ who are fully vaccinated (completed primary series) with the J&J/Janssen vaccine based on the jurisdiction where recipient lives	Object
+58.		Series_Complete_Moderna_12Plus	Total number of people ages 12+ who are fully vaccinated (completed primary series) with the Moderna vaccine based on the jurisdiction where recipient lives	Object
+59.		Series_Complete_Pfizer_12Plus	Total number of people ages 12+ who are fully vaccinated (completed primary series) with the Pfizer vaccine based on the jurisdiction where recipient lives	Object
+60.		Series_Complete_Unk_Manuf_12Plus	Total number of people ages 12+ who are fully vaccinated (completed primary series) with two doses from an unknown two-dose vaccine manufacturer based on the jurisdiction where recipient lives	Object
+61.		Series_Complete_Janssen_18Plus	Total number of people ages 18+ who are fully vaccinated (completed primary series) with the J&J/Janssen vaccine based on the jurisdiction where recipient lives	Object
+62.		Series_Complete_Moderna_18Plus	Total number of people ages 18+ who are fully vaccinated (completed primary series) with the Moderna vaccine based on the jurisdiction where recipient lives	Object
+63.		Series_Complete_Pfizer_18Plus	Total number of people ages 18+ who are fully vaccinated (completed primary series) with the Pfizer vaccine based on the jurisdiction where recipient lives	Object
+64.		Series_Complete_Unk_Manuf_18Plus	Total number of people ages 18+ who are fully vaccinated (completed primary series) with two doses from an unknown two-dose vaccine manufacturer based on the jurisdiction where recipient lives	Object
+65.		Series_Complete_Janssen_65Plus	Total number of people ages 65+ who are fully vaccinated (completed primary series) with the J&J/Janssen vaccine based on the jurisdiction where recipient lives	Object
+66.		Series_Complete_Moderna_65Plus	Total number of people ages 65+ who are fully vaccinated (completed primary series) with the Moderna vaccine based on the jurisdiction where recipient lives	Object
+67.		Series_Complete_Pfizer_65Plus	Total number of people ages 65+ who are fully vaccinated (completed primary series) with the Pfizer vaccine based on the jurisdiction where recipient lives	Object
+68.		Series_Complete_Unk_Manuf_65Plus	Total number of people ages 65+ who are fully vaccinated (completed primary series) with two doses from an unknown two-dose vaccine manufacturer based on the jurisdiction where recipient lives	Object
+69.		Additional_Doses	Total number of people who are fully vaccinated and have received a first booster (or additional) dose based on the jurisdiction where recipient lives	Object
+70.		Additional_Doses_Vax_Pct	Percent of people who are fully vaccinated and have received a first booster (or additional) dose based on the jurisdiction where recipient lives	float64
+71.		Additional_Doses_12Plus	Total number of people ages 12+ who are fully vaccinated and have received a first booster (or additional) dose based on the jurisdiction where recipient lives	Object
+72.		Additional_Doses_12Plus_Vax_Pct	Percent of people ages 12+ who are fully vaccinated and have received a first booster (or additional) dose based on the jurisdiction where recipient lives	float64
+73.		Additional_Doses_18Plus	Total number of people ages 18+ who are fully vaccinated and have received a first booster (or additional) dose based on the jurisdiction where recipient lives	Object
+74.		Additional_Doses_18Plus_Vax_Pct	Percent of people ages 18+ who are fully vaccinated and have received a first booster (or additional) dose based on the jurisdiction where recipient lives	float64
+75.		Additional_Doses_50Plus	Total number of people ages 50+ who are fully vaccinated and have received a first booster (or additional) dose based on the jurisdiction where recipient lives	Object
+76.		Additional_Doses_50Plus_Vax_Pct	Percent of people ages 50+ who are fully vaccinated and have received a first booster (or additiuonal) dose based on the jurisdiction where recipient lives	float64
+77.		Additional_Doses_65Plus    	Total number of people ages 65+ who are fully vaccinated and have received a first booster (or additional) dose based on the jurisdiction where recipient lives	Object
+78.		Additional_Doses_65Plus_Vax_Pct	Percent of people ages 65+ who are fully vaccinated and have received a first booster (or additional) dose based on the jurisdiction where recipient lives	float64
+79.		Colmns name 	Description	type
+80.		Additional_Doses_Moderna	Total number of fully vaccinated people who have received a first Moderna booster (or additional) dose	Object
+81.		Additional_Doses_Pfizer	Total number of fully vaccinated people who have received a first Pfizer booster (or additional) dose	Object
+82.		Additional_Doses_Janssen	Total number of fully vaccinated people who have received a first J&J/Janssen booster (or additional) dose	Object
+83.		Additional_Doses_Unk_Manuf	Total number of fully vaccinated people who have received a first booster (or additional) dose from another manufacturer	Object
+84.		Second_Booster	Total number of people who have received a second booster dose in the US	Object
+85.		Second_Booster_50Plus	Total number of people ages 50+ who have received a second booster dose based on the jurisdiction where recipient lives	Object
+86.		Second_Booster_50Plus_Vax_Pct	Percentage of people ages 50+ with a first booster dose who received a second booster dose based on the jurisdiction where recipient lives	float64
+87.		Second_Booster_65Plus	Total number of people ages 65+ who have received a second booster dose based on the jurisdiction where recipient lives	Object
+88.		Second_Booster_65Plus_Vax_Pct	Percentage of people ages 65+ with a first booster dose who received a second booster dose based on the jurisdiction where recipient lives	float64
+89.		Second_Booster_Janssen	Total number of people who have received a second booster dose manufactured by J&J/Janssen	object
+90.		Second_Booster_Moderna	Total number of people who have received a second booster dose manufactured by Moderna	Object
+91.		Second_Booster_Pfizer	Total number of people who have received a second booster dose manufactured by Pfizer-BioNTech	Object
+92.		Second_Booster_Unk_Manuf	Total number of people who have received a second booster dose from another manufacturer	Object
